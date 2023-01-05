@@ -1,4 +1,6 @@
 #!/bin/bash
+rm -rf dist
+rm -rf build
 ant concat allFlavors minify samples
 mkdir bundles
 cp dist/sv-c.js bundles/sv-c.js
